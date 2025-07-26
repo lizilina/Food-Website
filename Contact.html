@@ -24,6 +24,20 @@
     ></script>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <img src="./Img/Logo.svg" alt="header logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn"><a href="./Book.html">Book A Table</a></button>
+    </header>
+
     <section>
       <div class="contact-txt">
         <h1>Contact Us</h1>
@@ -33,55 +47,69 @@
         </p>
       </div>
 
-      <div class="contact-form">
-        <form action="" id="contact-form">
-          <div>
-            <label for="name">Name</label>
-            <input
-              class="form-input"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Enter your name"
-            />
-            <p class="error-text" id="error-name"></p>
+      <section class="contact-form">
+        <form action="" method="GET" id="contactForm">
+          <div class="form-row">
+            <div class="input-group">
+              <label for="firstName">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email address"
+              />
+            </div>
           </div>
-
-          <div>
-            <label for="Email">First Name</label>
-            <input
-              class="form-input"
-              type="email"
-              name="Email"
-              id="Email"
-              placeholder="Enter your email"
-            />
-            <p class="error-text" id="error-email"></p>
-          </div>
-
-          <div>
+          <div class="input-group">
             <label for="subject">Subject</label>
             <input
               class="form-input"
               type="text"
               name="subject"
               id="subject"
-              placeholder="Subject"
+              placeholder="Write a subject"
             />
-            <p class="error-text" id="error-subject"></p>
           </div>
-
-          <div>
+          <div class="input-group">
             <label for="message">Message</label>
             <textarea
-              id="message"
               name="message"
-              placeholder="Write your message here..."
+              id="message"
+              rows="6"
+              placeholder="Write your message"
             ></textarea>
-            <p class="error-text" id="error-message"></p>
           </div>
+          <input id="sendBtn" type="submit" value="Send" />
         </form>
-      </div>
+      </section>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col1">
+          <a href="#"><img src="./Img/FooterLogo.svg" alt="FooterLogo" /></a>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./Js/main.js"></script>
   </body>
 </html>
