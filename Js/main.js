@@ -28,6 +28,8 @@ if (noBtn) noBtn.addEventListener("click", function() {
   cookieBtnClicked("no");
 });
 
+
+// form validation
 if (form) {
   form.addEventListener("submit", function (e) {
     e.preventDefault(); 
@@ -46,7 +48,7 @@ if (form) {
   console.error("Form with id 'contactForm' not found!");
 }
 
-// Scroll ]
+// Scroll 
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
