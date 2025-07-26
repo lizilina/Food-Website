@@ -8,7 +8,7 @@ header {
   position: sticky;
   z-index: 1000;
   top: 0;
-  max-width: 100%;
+  max-width: 1293px;
   margin: auto;
   padding: 29px 151.5px;
   display: flex;
@@ -19,12 +19,63 @@ header {
   animation: slideDown 0.6s ease forwards;
 }
 
+.burger img {
+  width: 50px;
+  height: 50px;
+}
+
+header .burger {
+  display: none;
+}
+
+.burger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu {
+  transition: max-height 0.4s ease;
+}
+
+nav.active {
+  display: flex !important;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f7;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+@media screen and (max-width: 1140px) {
+  header .burger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
 header.scrolled {
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transform: translateY(0);
 }
-
 
 @keyframes slideDown {
   to {
@@ -85,11 +136,11 @@ button a {
 }
 
 .hero {
-  background-image: url('/Food-Website/Img/image_110.png');
+  background-image: url("/Food-Website/Img/image_110.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,13 +236,15 @@ footer {
   padding: 10px;
 }
 
-.book-text , .contact-txt{
+.book-text,
+.contact-txt {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.book-text h1, .contact-txt h1 {
+.book-text h1,
+.contact-txt h1 {
   font-family: Playfair Display;
   font-weight: 400;
   font-style: Regular;
@@ -201,7 +254,8 @@ footer {
   text-align: center;
 }
 
-.book-text p, .contact-txt p {
+.book-text p,
+.contact-txt p {
   font-family: DM Sans;
   font-weight: 400;
   font-style: Regular;
@@ -252,7 +306,7 @@ label {
   letter-spacing: 0px;
 }
 
-#submit-btn{
+#submit-btn {
   background-color: #ad343e;
   color: white;
   padding: 20px 32px;
@@ -263,11 +317,12 @@ label {
   transition: background-color 0.3s ease;
 }
 #submit-btn:hover {
-  background-color: #ff4c3b; 
+  background-color: #ff4c3b;
 }
 
 .about {
   max-width: 1100px;
+  height: 100vh;
   margin: 3rem auto;
   padding: 0 1.5rem;
   display: flex;
@@ -296,7 +351,7 @@ label {
   padding: 2rem;
   width: 320px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  font-family: "Segoe UI",  sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 .card h3 {
   margin-top: 0;
@@ -354,7 +409,7 @@ textarea {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   padding: 24px 32px;
   z-index: 1001;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   max-width: 320px;
 }
 
@@ -394,7 +449,6 @@ textarea {
 .cookie-popup_btn.yes:hover {
   background-color: #000;
 }
-
 
 .contact-form {
   background-color: #f9f9f7;

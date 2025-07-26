@@ -6,33 +6,34 @@ const messageInput = document.getElementById("message");
 const regexpForEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 // Cookie popup
-const popup = document.querySelector('.cookie-popup');
+const popup = document.querySelector(".cookie-popup");
 
-if (!localStorage.getItem('cookieEnabled')) {
-  popup.style.display = 'block';
+if (!localStorage.getItem("cookieEnabled")) {
+  popup.style.display = "block";
 }
 
 function cookieBtnClicked(answer) {
-  localStorage.setItem('cookieEnabled', answer);
-  popup.style.display = 'none';
+  localStorage.setItem("cookieEnabled", answer);
+  popup.style.display = "none";
 }
 
 const yesBtn = document.querySelector(".cookie-popup_btn.yes");
 const noBtn = document.querySelector(".cookie-popup_btn.no");
 
-if (yesBtn) yesBtn.addEventListener("click", function() {
-  cookieBtnClicked("yes");
-});
+if (yesBtn)
+  yesBtn.addEventListener("click", function () {
+    cookieBtnClicked("yes");
+  });
 
-if (noBtn) noBtn.addEventListener("click", function() {
-  cookieBtnClicked("no");
-});
-
+if (noBtn)
+  noBtn.addEventListener("click", function () {
+    cookieBtnClicked("no");
+  });
 
 // form validation
 if (form) {
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
 
     if (emailInput.value.length === 0) {
       alert("Email is required");
@@ -48,7 +49,7 @@ if (form) {
   console.error("Form with id 'contactForm' not found!");
 }
 
-// Scroll 
+// Scroll
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
@@ -57,4 +58,12 @@ window.addEventListener("scroll", function () {
   } else {
     header.classList.remove("scrolled");
   }
+});
+
+//Burger
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });
