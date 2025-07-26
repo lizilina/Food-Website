@@ -69,7 +69,7 @@ button a {
 }
 
 .hero {
-  background-image: url('../Img/image/ 110.png');
+  background-image: url('/Img/image_110.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
