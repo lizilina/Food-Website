@@ -69,7 +69,7 @@ button a {
 }
 
 .hero {
-  background-image: url("/Img/image\ 110.png");
+  background-image: url("./Img/image/ 110.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +247,7 @@ label {
   transition: background-color 0.3s ease;
 }
 #submit-btn:hover {
-  background-color: #ff4c3b; /* Hover color */
+  background-color: #ff4c3b; 
 }
 
 .about {
@@ -280,7 +280,7 @@ label {
   padding: 2rem;
   width: 320px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 .card h3 {
   margin-top: 0;
@@ -311,7 +311,7 @@ label {
   line-height: 1.2;
 }
 .right p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #4a4a4a;
