@@ -30,7 +30,7 @@ if (noBtn) noBtn.addEventListener("click", function() {
 
 if (form) {
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault(); 
 
     if (emailInput.value.length === 0) {
       alert("Email is required");
@@ -46,7 +46,7 @@ if (form) {
   console.error("Form with id 'contactForm' not found!");
 }
 
-// Scroll functionality
+// Scroll ]
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
