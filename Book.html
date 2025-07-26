@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/reset.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa685980c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./Img/Logo.svg" alt="header logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./Index.html">Home</a></li>
+          <li><a href="./About.html">About</a></li>
+          <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn"><a href="./Book.html">Book A Table</a></button>
+    </header>
+
+    <section class="book-text">
+      <h1>Book A Table</h1>
+      <p>
+        We consider all the drivers of change gives you the components <br />
+        you need to change to create a truly happens.
+      </p>
+    </section>
+
+    <section class="book-cont">
+      <form action="" id="booking-form">
+        <div>
+          <label for="firstname">First Name</label>
+          <input
+            class="form-input"
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Enter your name"
+          />
+          <p class="error-text" id="error-firstname"></p>
+        </div>
+        <div>
+          <label for="lastname">Last Name</label>
+          <input
+            class="form-input"
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Enter your last name"
+          />
+          <p class="error-text" id="error-lastname"></p>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <p class="error-text" id="error-email"></p>
+        </div>
+        <div>
+          <label for="table">Choose a Table:</label>
+          <select name="table" id="table">
+            <option value=""></option>
+            <option value="101">table 1</option>
+            <option value="102">table 2</option>
+            <option value="103">table 3</option>
+            <option value="104">table 4</option>
+          </select>
+          <p class="error-text" id="error-table"></p>
+        </div>
+
+        <div>
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            name="guests"
+            id="guests"
+            placeholder=""
+            min="1"
+          />
+          <p class="error-text" id="error-guests"></p>
+        </div>
+        <button id="submit-btn">Book</button>
+      </form>
+    </section>=
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col1">
+          <a href="#"><img src="./Img/FooterLogo.svg" alt="FooterLogo" /></a>
+        </div>
+        <div class="col3">
+          <ul class="media-icons">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
